@@ -237,7 +237,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 50, y: -75}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 60}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &271698132
@@ -418,6 +418,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 626643400}
+  - component: {fileID: 626643401}
   m_Layer: 0
   m_Name: CameraController
   m_TagString: Untagged
@@ -440,6 +441,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &626643401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626643399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 345c584b5aaa09b4cad44e66f86021a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_DampTime: 0.1
+  m_ScreenEdgeBuffer: 8
+  m_Minsize: 6.5
 --- !u!1 &924533009
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,7 +735,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -73, y: -123.5}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 330, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1269821001
@@ -1097,6 +1113,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1569929866179362817, guid: 7faf45020c6925e4ba4df19717e06f1e,
+        type: 3}
+      propertyPath: playerID
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7faf45020c6925e4ba4df19717e06f1e, type: 3}
 --- !u!1 &1834059640 stripped
@@ -1387,6 +1408,47 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1569929866179362817, guid: 7faf45020c6925e4ba4df19717e06f1e,
+        type: 3}
+      propertyPath: playerID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1569929866179362817, guid: 7faf45020c6925e4ba4df19717e06f1e,
+        type: 3}
+      propertyPath: corpo
+      value: 
+      objectReference: {fileID: 1895190181}
+    - target: {fileID: 1569929866179362817, guid: 7faf45020c6925e4ba4df19717e06f1e,
+        type: 3}
+      propertyPath: mira
+      value: 
+      objectReference: {fileID: 1513722831}
+    - target: {fileID: 1569929866179362817, guid: 7faf45020c6925e4ba4df19717e06f1e,
+        type: 3}
+      propertyPath: bomba
+      value: 
+      objectReference: {fileID: 54253675377848248, guid: 1ef06fd8c8d36dd4389e2d775d4451f0,
+        type: 3}
+    - target: {fileID: 1569929866179362817, guid: 7faf45020c6925e4ba4df19717e06f1e,
+        type: 3}
+      propertyPath: audioMovimento
+      value: 
+      objectReference: {fileID: 1895190178}
+    - target: {fileID: 1569929866179362817, guid: 7faf45020c6925e4ba4df19717e06f1e,
+        type: 3}
+      propertyPath: veiculoParado
+      value: 
+      objectReference: {fileID: 8300000, guid: 15d788719434f1f49b567b0dd43dc3a8, type: 3}
+    - target: {fileID: 1569929866179362817, guid: 7faf45020c6925e4ba4df19717e06f1e,
+        type: 3}
+      propertyPath: veiculoAndando
+      value: 
+      objectReference: {fileID: 8300000, guid: c9c210d538abdf84888d3310c072c8b9, type: 3}
+    - target: {fileID: 1569929866179362817, guid: 7faf45020c6925e4ba4df19717e06f1e,
+        type: 3}
+      propertyPath: audioTiro
+      value: 
+      objectReference: {fileID: 1895190178}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7faf45020c6925e4ba4df19717e06f1e, type: 3}
 --- !u!4 &1895190175 stripped
@@ -1622,6 +1684,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 1.7, z: 3.7}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1895190181 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1736805292335550, guid: 7faf45020c6925e4ba4df19717e06f1e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1895190174}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2057088671
 GameObject:
   m_ObjectHideFlags: 0
