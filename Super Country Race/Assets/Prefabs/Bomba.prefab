@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4467641211157902}
   - component: {fileID: 33346558306389206}
   - component: {fileID: 23559566466351464}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: BombBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 198694496161554788}
   - component: {fileID: 199582134454762116}
   - component: {fileID: 82188123553868490}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: CompleteShellExplosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4925,7 +4925,7 @@ GameObject:
   - component: {fileID: 4478135850019614}
   - component: {fileID: 198116569746018930}
   - component: {fileID: 199732530876362498}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: Trails
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9606,7 +9606,8 @@ GameObject:
   - component: {fileID: 135161685472013840}
   - component: {fileID: 108965537055736746}
   - component: {fileID: 54253675377848248}
-  m_Layer: 9
+  - component: {fileID: 3564932020378391124}
+  m_Layer: 11
   m_Name: Bomba
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9698,6 +9699,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3564932020378391124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698575743910712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd6e40cbf50ef54ea43fe02d8a055f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  particulaExplosao: {fileID: 198694496161554788}
+  audioExplosao: {fileID: 82188123553868490}
+  forcaExplosao: 500
+  areaExplosao: 5
+  tempoDeVida: 2
 --- !u!1 &1730772172094474
 GameObject:
   m_ObjectHideFlags: 0
@@ -9709,7 +9730,7 @@ GameObject:
   - component: {fileID: 4640527942122536}
   - component: {fileID: 33469809140935388}
   - component: {fileID: 23581004190386360}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: BombWick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9786,7 +9807,7 @@ GameObject:
   - component: {fileID: 4967233192264332}
   - component: {fileID: 33757050744690408}
   - component: {fileID: 23547964713812746}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: BombTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9863,7 +9884,7 @@ GameObject:
   - component: {fileID: 4755912041026730}
   - component: {fileID: 198916901030740704}
   - component: {fileID: 199581244261662342}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: Burst
   m_TagString: Untagged
   m_Icon: {fileID: 0}

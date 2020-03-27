@@ -679,6 +679,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1256110907}
+  - component: {fileID: 1256110908}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -700,6 +701,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1256110908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256110906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6adc77fd70c7dd945880ea5e169e3910, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  players: []
+  HudPrincipal: {fileID: 1269821001}
+  HudVoltas: {fileID: 271698132}
+  voltaAtual: 0
+  maximoVoltas: 5
 --- !u!1 &1269820999
 GameObject:
   m_ObjectHideFlags: 0
@@ -1118,6 +1136,42 @@ PrefabInstance:
       propertyPath: playerID
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1569929866179362817, guid: 7faf45020c6925e4ba4df19717e06f1e,
+        type: 3}
+      propertyPath: mira
+      value: 
+      objectReference: {fileID: 2057088672}
+    - target: {fileID: 1569929866179362817, guid: 7faf45020c6925e4ba4df19717e06f1e,
+        type: 3}
+      propertyPath: bomba
+      value: 
+      objectReference: {fileID: 54253675377848248, guid: 1ef06fd8c8d36dd4389e2d775d4451f0,
+        type: 3}
+    - target: {fileID: 1569929866179362817, guid: 7faf45020c6925e4ba4df19717e06f1e,
+        type: 3}
+      propertyPath: veiculoParado
+      value: 
+      objectReference: {fileID: 8300000, guid: 15d788719434f1f49b567b0dd43dc3a8, type: 3}
+    - target: {fileID: 1569929866179362817, guid: 7faf45020c6925e4ba4df19717e06f1e,
+        type: 3}
+      propertyPath: veiculoAndando
+      value: 
+      objectReference: {fileID: 8300000, guid: c9c210d538abdf84888d3310c072c8b9, type: 3}
+    - target: {fileID: 1569929866179362817, guid: 7faf45020c6925e4ba4df19717e06f1e,
+        type: 3}
+      propertyPath: audioMovimento
+      value: 
+      objectReference: {fileID: 1834059642}
+    - target: {fileID: 1569929866179362817, guid: 7faf45020c6925e4ba4df19717e06f1e,
+        type: 3}
+      propertyPath: audioTiro
+      value: 
+      objectReference: {fileID: 1834059642}
+    - target: {fileID: 2849875053645926478, guid: 7faf45020c6925e4ba4df19717e06f1e,
+        type: 3}
+      propertyPath: gameController
+      value: 
+      objectReference: {fileID: 1256110908}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7faf45020c6925e4ba4df19717e06f1e, type: 3}
 --- !u!1 &1834059640 stripped
@@ -1449,7 +1503,8 @@ PrefabInstance:
       propertyPath: audioTiro
       value: 
       objectReference: {fileID: 1895190178}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2849875053645926478, guid: 7faf45020c6925e4ba4df19717e06f1e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7faf45020c6925e4ba4df19717e06f1e, type: 3}
 --- !u!4 &1895190175 stripped
 Transform:
@@ -1690,6 +1745,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1895190174}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1895190182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895190176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3df1b64806e2d54980a8884154d8fe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameController: {fileID: 1256110908}
 --- !u!1 &2057088671
 GameObject:
   m_ObjectHideFlags: 0
